@@ -50,6 +50,9 @@
         <origin xyz="0.15 0 0.045" rpy="0 0 0"/>
     </xacro:inertial_box>
 </link>
+<gazebo reference="chassis">
+    <material>Gazebo/White</material>
+</gazebo>
 
 
 
@@ -73,6 +76,10 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
 </link>
+<gazebo reference="front_left_wheel">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
 
 <!-- REAR RIGHT WHEEL -->
 <joint name="front_right_wheel_joint" type="continuous">
@@ -93,8 +100,9 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
 </link>
-
-
+<gazebo reference="front_right_wheel">
+    <material>Gazebo/Blue</material>
+</gazebo>
 
 
 <!-- FRONT LEFT WHEEL -->
@@ -116,6 +124,10 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
 </link>
+<gazebo reference="rear_left_wheel">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
 
 <!-- FRONT RIGHT WHEEL -->
 <joint name="rear_right_wheel_joint" type="continuous">
@@ -136,7 +148,9 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
 </link>
-
+<gazebo reference="rear_right_wheel">
+    <material>Gazebo/Blue</material>
+</gazebo>
 
 
 
@@ -169,6 +183,9 @@
         <origin xyz="0 0 0" rpy="0 0 0"/>
     </xacro:inertial_box>
 </link>
+<gazebo reference="arm_base">
+    <material>Gazebo/Blue</material>
+</gazebo>
 
 
 <!-- ARM JOINT1 -->
@@ -198,8 +215,9 @@
     <origin xyz="0 0 -0.0275" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
 </link>
-
-
+<gazebo reference="arm_link_1">
+    <material>Gazebo/Orange</material>
+</gazebo>
 
 
 <!-- ARM JOINT2 -->
@@ -229,6 +247,9 @@
     <origin xyz="0 0.07 0" rpy="-${pi/2} 0 0"/>
     </xacro:inertial_cylinder>
 </link>
+<gazebo reference="arm_link_2">
+    <material>Gazebo/Blue</material>
+</gazebo>
 
 
 
@@ -259,6 +280,11 @@
     <origin xyz="0 0.05 0" rpy="-${pi/2} 0 0"/>
     </xacro:inertial_cylinder>
 </link>
+<gazebo reference="arm_link_3">
+    <material>Gazebo/Orange</material>
+</gazebo>
+
+
 
 <!-- ARM JOINT4 -->
 <joint name="arm_joint_4" type="revolute">
@@ -287,6 +313,10 @@
     <origin xyz="0 0 0.03" rpy="0 0 0"/>
     </xacro:inertial_cylinder>
 </link>
+<gazebo reference="arm_link_4">
+    <material>Gazebo/Blue</material>
+</gazebo>
+
 
 
 <!-- ARM JOINT5 -->
@@ -316,6 +346,9 @@
         <origin xyz="0 0.04 0" rpy="${pi/2} 0 0"/>
     </xacro:inertial_cylinder>
 </link>
+<gazebo reference="arm_link_5">
+    <material>Gazebo/Orange</material>
+</gazebo>
 
 
 
